@@ -1,12 +1,18 @@
+import { Route, Routes } from "react-router-dom"
+import Layout from "./layouts/Layout"
 
 
 
 
 const App = () => {
   return (
-    <div className="text-lime-300">
-      hello react
-    </div>
+      <Routes>
+        <Route 
+        path="/" 
+        element={ <Layout />} 
+       
+        />
+      </Routes>
   )
 }
 
